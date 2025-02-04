@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="styyle.css">
+
+
+
+</head>
+<body>
+    <nav>
+        <div id="heading">
+           
+            <a href="">
+                <img src="noteicom.png" alt="phot" width="35px" height="35px">
+            </a>
+            <h2>Note Paddle</h2>
+        </div>
+    </nav>
+
+    
+    
+        
+    <div id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+        <div id="register-link">
+            Don't have an account? <a href="javascript:void(0);" onclick="showRegister()">Register</a>
+        </div>
+    </div>
+
+    <div id="register-container" style="display:none;">
+        <h2>Register</h2>
+        <input type="text" id="new-username" placeholder="Username" required>
+        <input type="password" id="new-password" placeholder="Password" required>
+        <button onclick="register()">Register</button>
+        <div id="login-link">
+            Already have an account? <a href="javascript:void(0);" onclick="showLogin()">Login</a>
+        </div>
+    </div>
+
+    <div id="notes-container" style="display:none;">
+        <h3 style="font-size: 15px; bottom: 15px; position: relative; text-decoration: underline; transition: 2s;">wellcome!</h3>
+        <h2>My Notes</h2>
+        <button  onclick="logout()">Logout</button>
+        <textarea id="note-input" placeholder="Write your note here..."></textarea>
+        <button onclick="saveNote()">Save Note</button>
+       
+        <div id="note-list"></div>
+    </div>
+    
+
+    <script src="tt.js"></script>
+</body>
+</html>
